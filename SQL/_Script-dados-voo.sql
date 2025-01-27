@@ -26,6 +26,11 @@ Values(222444, '444' );
 Insert  Into Telefone(Numero, Passageiro_Pessoa_CPF)
 Values(888555, '333' );
 
+------------------------------------------------------------------------
+-- Quando usar o oracle executar o comando abaixo para formatar as datas
+-- ALTER SESSION SET NLS_DATE_FORMAT='YYYY-MM-DD'
+------------------------------------------------------------------------
+
 Insert  Into Voo(Numero, Data, Piloto_Pessoa_CPF)
 Values(101, '2010-10-10', '222' );
 Insert  Into Voo(Numero, Data, Piloto_Pessoa_CPF)
