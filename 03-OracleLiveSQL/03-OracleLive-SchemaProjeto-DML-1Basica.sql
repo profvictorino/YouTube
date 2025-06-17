@@ -34,10 +34,13 @@ WHERE nome LIKE 'E%' OR nome LIKE 'R%';
 ------------------------------------------------------------------------------------------------------------
 Select *
 From Pessoa
-WHERE idade % 2 = 0;
+WHERE MOD(idade, 2) = 0;
 
 ------------------------------------------------------------------------------------------------------------
 -- Liste a quantidade de Pessoas cadastrada na tabela Pessoa, idade mínima, máxima e a média das idades das Pessoas.
 ------------------------------------------------------------------------------------------------------------
-Select COUNT(*) as Quantidade, MIN(idade) as Menor_Idade, MAX(idade) as Maior_Idade, AVG(idade) as Idade_media
+Select COUNT(*) as Quantidade, 
+       MIN(idade) as Menor_Idade, 
+       MAX(idade) as Maior_Idade, 
+       AVG(idade) as Idade_media
 From Pessoa;

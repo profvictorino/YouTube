@@ -14,6 +14,11 @@ INSERT INTO pessoa  ( CPF ,  Nome ,  Sexo ,  Idade ) VALUES (789, 'Luiz', 'M', 3
 INSERT INTO pessoa  ( CPF ,  Nome ,  Sexo ,  Idade ) VALUES (147, 'Maria', 'F', 42);
 INSERT INTO pessoa  ( CPF ,  Nome ,  Sexo ,  Idade ) VALUES (258, 'Edu', 'M', 45);
 
+UPDATE pessoa SET Gerente_CPF = 123 WHERE (CPF = 147);
+UPDATE pessoa SET Gerente_CPF = 123 WHERE (CPF = 456);
+UPDATE pessoa SET Gerente_CPF = 147 WHERE (CPF = 258);
+UPDATE pessoa SET Gerente_CPF = 456 WHERE (CPF = 789);
+
 -- -------------------------------------------
 -- Table  Aloca 
 -- -----------------------------------------------------
